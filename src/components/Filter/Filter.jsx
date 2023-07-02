@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Input } from './Filter.styled'
 
 function Filter({ filter, setFilter }) {
@@ -16,5 +17,10 @@ function Filter({ filter, setFilter }) {
     />
   );
 }
+
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  setFilter: PropTypes.func.isRequired,
+};
 
 export default Filter
