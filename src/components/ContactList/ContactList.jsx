@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import ContactItem from '../ContactItem/ContactItem';
 
 function ContactList({ contacts, deleteContact }) {
